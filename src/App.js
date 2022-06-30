@@ -2,6 +2,7 @@ import './App.css';
 import data from "./data.js";
 import React from "react"
 import {FaMapMarkerAlt } from 'react-icons/fa';
+import earthImg from "./earthImg.png";
 
 function App() {
     const dataMap = data.map(data => {
@@ -24,7 +25,7 @@ function App() {
  return (
   <div>
       <header>
-        my travel journal
+      <img src={earthImg} alt="earth" className="earth"/> my travel journal
       </header>
       {dataMap}
   </div>
