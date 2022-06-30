@@ -1,17 +1,17 @@
 import './App.css';
 import data from "./data.js";
 import React from "react"
-import {FaMapMarkerAlt} from 'react-icons/fa';
+import {FaMapMarkerAlt } from 'react-icons/fa';
 
 function App() {
     const dataMap = data.map(data => {
       return(
       <div className="wrapper">
-      <img src={data.imageUrl}></img>
+      <img src={data.imageUrl} alt="1"></img>
       <div className="sub-wrapper">
         <div className="location-maps">    
           <p className="location"><FaMapMarkerAlt/>{data.location}</p>
-          <a href={data.googleMapsUrl} target="_blank" className="links">View in google maps</a>    
+          <a href={data.googleMapsUrl} target="_blank" rel="noreferrer" className="links">View in google maps</a>    
         </div>
 
         <h1>{data.title}</h1>
@@ -25,7 +25,7 @@ function App() {
   <div>
       <header>
         my travel journal
-        </header>
+      </header>
       {dataMap}
   </div>
  )

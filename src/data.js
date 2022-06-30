@@ -1,4 +1,4 @@
-export default [
+const data = [
     {
         title: "Mount Fuji",
         location: "JAPAN",
@@ -27,3 +27,5 @@ export default [
         imageUrl: "https://www.thediscoveriesof.com/wp-content/uploads/2019/01/Travel-Bucket-List-68.jpg"
     }
 ]
+
+export default data;
