@@ -1,7 +1,6 @@
 import './App.css';
 import data from "./data.js";
 import React from "react"
-import Travel from "./Travel.js";
 import {FaMapMarkerAlt} from 'react-icons/fa';
 
 function App() {
